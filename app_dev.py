@@ -4,12 +4,13 @@ from flask import Flask, request
 from pymessenger2.bot import Bot
 # from pymessenger.bot_higashi import Bot_Higashi
 import os
+
 app = Flask(__name__)
 
 #ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 #VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 
-ACCESS_TOKEN = 'EAAcCl48DZANsBAAVbqHZBeSlgCFFcp7Aeiu3cVFYDX2WOFhJOgsWT4Fx7Ld1rZBQCRQTo3kdSiMFxn4gD1zsgUMWaJF1DFctSSdXNtZCexKxLZBjQ8fse8BoaxKObFZBrbXuC18bmpa7maaR9Go5ySek2N3vdNf5qfcIiCw6dumgZDZD'
+ACCESS_TOKEN = 'EAAcCl48DZANsBAMGkgg2HFOudYupDmVt2oa6joguZBEQaCVLRI0brewL7JGmMirafqM2OUqsLu5ZAZCxlYPLdtjmKWIOSxQBTjoTiEpEawlMw6I1EnRkF6szBcihKVGPnYBH4kHDZAmVE8s2JrvAcSLmlK752ioK2iiw3z9ha8gZDZD'
 VERIFY_TOKEN = 'Verify_Token_Dev'
 
 bot = Bot(ACCESS_TOKEN)
