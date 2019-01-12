@@ -10,7 +10,7 @@ app = Flask(__name__)
 #ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
 #VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 
-ACCESS_TOKEN = 'EAAcCl48DZANsBAMGkgg2HFOudYupDmVt2oa6joguZBEQaCVLRI0brewL7JGmMirafqM2OUqsLu5ZAZCxlYPLdtjmKWIOSxQBTjoTiEpEawlMw6I1EnRkF6szBcihKVGPnYBH4kHDZAmVE8s2JrvAcSLmlK752ioK2iiw3z9ha8gZDZD'
+ACCESS_TOKEN = 'EAAcCl48DZANsBAJ8vCN56D41m2jOfeZCNlJgSyE2ZCqFNDiiwW5bDZBtvLrlOdT8zWa1WOSCZCfv6UveFxAS5DHMW4xaXI4P9ulr19uOUgSl4fSX2mNoKQHan4ainX1cWdbCANmkM0WEDiTp2ZBaXdSUjF0rwPKJo4K5UmJOYX4wZDZD'
 VERIFY_TOKEN = 'Verify_Token_Dev'
 
 bot = Bot(ACCESS_TOKEN)
@@ -97,4 +97,6 @@ def send_quick_message(recipient_id, response):
 """
 
 if __name__ == "__main__":
-    app.run()
+#    app.run()
+    port = int(os.getenv("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
