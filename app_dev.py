@@ -1,17 +1,17 @@
 #Python libraries that we need to import for our bot
 import random
 from flask import Flask, request
-from pymessenger2.bot import Bot
+from pymessenger.bot import Bot
 # from pymessenger.bot_higashi import Bot_Higashi
 import os
 
 app = Flask(__name__)
 
-ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
-VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
+#ACCESS_TOKEN = os.environ['ACCESS_TOKEN']
+#VERIFY_TOKEN = os.environ['VERIFY_TOKEN']
 
-#ACCESS_TOKEN = 'EAAcCl48DZANsBACp2vZBWgFp6A2OemZAOcoqrZAyRefUlHzI0zApOZAAfYGB4ZBCS8eK71zXp1LJVZBTp0tQX2sL1FDdaVEfBJ4bMCuXLeCct3ADQCwqjTjS2kxFmxpbDoOZAL4ZAHVcDB6XQKW20W7u5V7ScgYfYrKCr5QyWfZAp1pQZDZD'
-#VERIFY_TOKEN = 'Verify_Token_Dev'
+ACCESS_TOKEN = 'EAAcCl48DZANsBACp2vZBWgFp6A2OemZAOcoqrZAyRefUlHzI0zApOZAAfYGB4ZBCS8eK71zXp1LJVZBTp0tQX2sL1FDdaVEfBJ4bMCuXLeCct3ADQCwqjTjS2kxFmxpbDoOZAL4ZAHVcDB6XQKW20W7u5V7ScgYfYrKCr5QyWfZAp1pQZDZD'
+VERIFY_TOKEN = 'Verify_Token_Dev'
 
 bot = Bot(ACCESS_TOKEN)
 # bot_higashi = Bot_Higashi(ACCESS_TOKEN)
