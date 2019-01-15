@@ -265,4 +265,6 @@ def log(msg):# , *args, **kwargs):  # simple wrapper for logging to stdout on he
 """
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    #    app.run()
+    port = int(os.getenv("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)
