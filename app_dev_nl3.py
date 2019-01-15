@@ -97,7 +97,7 @@ def webhook():
                         buttons = ['最初から始める']
                         send_quick_reply(sender_id, text, buttons)
 
-                    elif message_text == '最初から始める':
+                    elif message_text == '最初から始める' or message_text == 'チャットできる人はいますか？' or message_text == '質問があります。':
                         text = "お困りなことはございませんか？"
                         buttons = ["離婚", "不倫", "相続", "残業未払い", "パワハラ", "セクハラ"]
                         send_quick_reply(sender_id, text, buttons)
