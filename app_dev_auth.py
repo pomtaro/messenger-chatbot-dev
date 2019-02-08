@@ -46,7 +46,7 @@ def receive_message():
                 if message['message'].get('attachments'):
                     response_sent_nontext = get_message(message['message'].get('attachments'))
                     send_message(recipient_id, response_sent_nontext)
-    return "Message Processed"
+    return "ok", 200
 
 """
 @attr.s
